@@ -1,0 +1,684 @@
+body{
+    padding:0px;
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif
+}
+li{
+    list-style-type: none;
+    padding:5px 10px;
+}
+
+li:hover{
+    background-color:#006285; ;
+    color:white;
+}
+.navbar{
+    display: flex;
+    border:0.5px solid #dbdbdb;
+    padding:0 1%;
+
+}
+.navbar a{
+    color:#39393b;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+}
+.navbar li>a:hover{
+    color:white;
+}
+h1{
+    font-weight: 500;
+}
+
+.navbarLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+  
+ 
+}
+.navbarMenu{
+    width:80%;
+    display: flex;
+}
+
+.navbarMenu a{
+    height: 100%;
+    width:100%;
+    display: inline-block;
+}
+.centerNavbarMenu{
+    width:65%;
+    display: flex;
+    
+
+}
+.rightNavbarMenu{
+    width: 35%;
+    display: flex;
+   
+}
+
+#netAcadLogo{
+    width:120px;
+    height:30px;
+    
+}
+
+.caret-down{
+    position: absolute;
+    top:32px;
+    height:10px;
+    width:10px;
+}
+
+.coursesbtn,.careersbtn,.morebtn,.languagesbtn,.logInbtn,.supportbtn{
+    border:0;
+    background-color: white;
+    height:70px;
+    width:80px;
+    display: inline-block;  
+}
+
+.coursesDropDown,.careersDropDown,.moreDropDown,.languagesDropDown,.logInDropDown{
+    color: #39393b;
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color:#ececec ;
+    box-shadow:0px 0px 5px grey;
+    top:55px;
+    z-index:1;
+    padding-left: 0px;
+}
+
+.courses:hover .coursesDropDown,.careers:hover .careersDropDown,.more:hover .moreDropDown,.languages:hover .languagesDropDown,.logIn:hover .logInDropDown{
+    display: block;
+}
+.coursesbtn:hover,.careersbtn:hover,.morebtn:hover,.languagesbtn:hover,.logInbtn:hover,.supportbtn:hover{
+    color:#4d90fe;
+    border-bottom:5px solid #006285;   
+    padding-top: 6px;
+}
+.courses:hover .coursesbtn ,.careers:hover .careersbtn,.more:hover .morebtn,.languages:hover .languagesbtn,.logIn:hover .logInbtn,.languages:hover .languagesbtn{
+    border-bottom:5px solid #006285;  
+    padding-top: 6px;
+}
+
+.logInDropDown{  
+    right: 85px;
+    top:55px;
+}
+.languages{
+    padding-left: 5%;
+    width:120px;
+}
+
+.navbar li:hover a{
+    color:white;
+}
+
+.support{
+    color: #39393b;
+}
+.search{
+    margin-top: 15px;
+    height:40px;
+    width:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-right:2px solid rgb(198,191,243);
+    position: relative; 
+}
+
+.triangle{
+    display: none;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-left: 17px solid transparent;
+    border-bottom: 15px solid #3a3a3b;
+    border-right: 17px solid transparent;
+    top: 22px;
+    left: -37px;
+    z-index: 1;
+}
+.triangle::after {
+    content: '';
+    position: absolute;
+    border-left: 14px solid transparent;
+    border-bottom: 14px solid #f5f5f5;
+    border-right: 14px solid transparent;
+    top: 2px;
+    left: -14px;
+}
+
+#searchBoxContainer{
+    position: relative;;
+}
+
+.searchBox{
+    height: 30px;
+    width: 290px;
+    border: 1px solid black;
+    position: absolute;
+    top: 60px;
+    left: -158px;
+   display:none;
+}
+#searchBoxContainer1{
+    display: inline-block;
+    border: 1px solid black;
+    height: 79px;
+    width: 330px;
+    position: absolute;
+    top: 36px;
+    left: -176px;
+    display:none;
+    border: 1px solid #6b6c6e;
+    background-color:#f5f5f5 ;
+}
+
+#searchBoxIcon{
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 282px;
+    z-index: 1;
+    background-color: #58585b;
+    height: 32px;
+    width: 30px;
+}
+#searchBoxIcon img{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+
+}
+.search button{
+    border:0;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    height: 100%;
+    width: 57%;
+}
+
+.courseOffer{
+    margin-left: 0;
+    text-align: center;
+    margin:1% 0%;
+    padding:5px 7px;
+    font-size:17px;
+    background-color:#dcefd2;
+}
+
+a{
+   color: #0070d2;
+   font-weight: 600;
+
+   
+}
+#courseOfferLink{
+    font-weight: 700;
+}
+#courseOfferLink:hover{
+    
+    color:#47b1d2;
+    text-decoration: none;
+
+}
+.heroBanner1{
+    display:flex;
+
+  
+}
+.heroBanner1Left{
+    width:50%;
+    margin:3% 5%; 
+   
+}
+.heroBanner1Heading{
+     line-height: 4rem;
+     font-size:1.5rem;
+
+}
+.heroBanner1Heading>h1{
+    font-weight:100;
+}
+.heroBanner1Paragraph{
+    margin: 30px 0 ;
+    font-size:18px;
+    line-height: 1.5rem;
+}
+
+.heroBanner1Paragraph>a{
+    font-weight:500;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#3390e2;
+  
+}
+
+
+.heroBanner1Buttons>button{
+    padding:15px 20px;
+    border-radius:10px;
+    background-color: #0070D2;
+    color:white;
+    border:none;
+    margin:5px;
+}
+.heroBanner1Buttons>button>a{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.heroBanner1Right{
+    margin:3% 5%;
+    width:50%
+}
+
+.stats{
+    display:flex;
+    background-color: #f2fbfd;
+    padding:20px 0px; 
+}
+
+.stats>div{
+    width:20%;  
+    text-align: center;
+    padding-right:20px ;
+}
+.stats>div>h3{
+    color: #0070D2;
+
+}
+.heroBanner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.heroBanner2Header{
+    text-align: center;
+
+}
+
+.heroBanner2Contents{
+    margin: 50px 0 ;
+    display: grid;
+    grid-template-columns:300px  200px 300px 200px;
+    grid-template-rows: repeat(2,100px);
+    margin-left: 50px;
+    
+}
+.heroBanner2Contents>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroBanner2Contents>div>img{
+    height:32px;
+    width:32px;
+}
+.heroBanner2Contents a{
+    font-weight: 600;
+
+}
+.heroBanner2Contents>div>a:hover{
+
+    text-decoration: none;
+}
+
+.heroBanner3{
+    background-color:#f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+}
+
+.heroBanner3Header{
+    text-align: center;
+
+}
+
+.heroBanner3Content{
+    display: flex;
+    margin-top: 50px;
+}
+
+.heroBanner3ContentLeft{
+    text-align: center;
+    width:50%;
+    border-right:1px solid white;
+    line-height: 20px;
+}
+.heroBanner3Content  button{
+    padding:15px 40px;
+    border-radius:25px;
+    background-color: #025E80;
+    color:white;
+    border:none;
+    margin:5px;
+
+}
+.heroBanner3Content  button:hover{
+    background-color: #0070D2;
+
+}
+
+.heroBanner3Content Button>a{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.heroBanner3ContentRight{
+    text-align: center;
+    width:50%;
+    line-height: 20px;
+}
+
+.heroBanner3ContentRightLocation{
+    text-align:left;
+    margin-left:40px;
+    position: relative;
+
+}
+
+#locationPin{
+    position:absolute;
+    top: 41px;
+    left:2px;
+}
+#locationBox{
+    outline:0;
+    width:350px;
+    height: 30px;;
+    border:1px solid #dfdfdf;
+    margin-bottom: 10px;
+    text-indent: 20px;    
+}
+
+#locationBox:hover ,#locationBox:hover {
+    outline:0;
+    border:1px solid #47b1d2;
+}
+
+.heroBanner4{
+    margin:70px 50px;
+    border-bottom: 2px solid blue;
+    padding-bottom: 50px;
+
+
+}
+.heroBanner4Content button,.heroBanner5 button,.heroBanner6 button,.heroBanner7 button,.heroBanner8 button{
+    padding:15px 40px;
+    border-radius:25px;
+    background-color:#0070D2;
+    color:white;
+    border:none;
+    margin:5px;
+}
+.heroBanner4Content button>a,.heroBanner5 button>a,.heroBanner6 button>a,.heroBanner7 button>a,.heroBanner8 button>a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.heroBanner4Content button:hover,.heroBanner5 button:hover,.heroBanner6 button:hover,.heroBanner7 button:hover,.heroBanner8 button:hover{
+    background-color:#025E80;
+}
+
+
+.heroBanner4Header{
+    text-align: center;
+
+
+}
+.heroBanner4Content{
+    display: flex;
+
+}
+.heroBanner4Content p{
+    line-height: 20px;
+
+}
+.heroBanner4ContentLeft{
+    text-align: center;
+    width:50%;
+    padding:5px 30px;
+    border-right: 2px solid #808083;
+
+}
+.heroBanner4ContentRight{
+    text-align: center;
+    width:50%;
+    padding:5px 30px;
+
+}
+
+.heroBanner5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.heroBanner5Header{
+    text-align: center;
+
+}
+
+.heroBanner5Content{
+    display: flex;
+    justify-content: center;
+    margin:50px;
+
+}
+.heroBanner5Content img{
+    height: 32px;
+    width: 32px;
+   
+}
+.heroBanner5Content div{
+    width:200px;
+    height:100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.heroBanner5 Button{
+    height: 50px;
+    width:200px;
+
+}
+
+.heroBanner6{
+   text-align: center;
+   background-color: #f2fbfd;
+   padding:30px 0;
+}
+.heroBanner6 button{
+    margin:30px 0;
+}
+
+.heroBanner7{
+    padding-top: 50px;
+    text-align: center;
+
+}
+.heroBanner7 button{
+    margin:30px 0;
+
+}
+.heroBanner8{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.heroBanner8Content{
+    display: flex;
+    margin-left:20px;
+  
+}
+.heroBanner8Card{
+    width:33%;
+    margin:30px 15px 30px 0px;
+    box-shadow: 0px 1px 5px grey;
+    text-align: center;
+}
+
+.heroBanner8Card img{
+    width:100%;
+
+}
+
+
+.heroBanner8CardParagraph{
+    padding:20px;
+    text-align: center;
+    color:#808083;
+    line-height: 20px;
+}
+
+.heroBanner8CardParagraph>h3{
+    color: black;
+    font-weight: 500;
+}
+
+
+#survey{
+    margin: 50px 0;
+    font-weight: 200;
+    font-size: 14px;
+
+}
+
+.help{
+    padding:20px;
+    background-color:#f2f2f2;
+    margin-bottom: 5px;
+
+}
+
+.help a{
+    font-weight: 400;
+
+}
+
+.footer{
+    background-color: #58585b;
+    color:white;
+}
+
+.footerHeader{
+    display: flex;
+    padding-top: 30px;
+  
+  
+}
+.footerHeader a:hover{
+    text-decoration: underline;
+
+}
+.footer a{
+    color:white;
+    font-weight: 400;
+
+}
+.footerCol1{
+    display: flex;
+    flex-direction: column;
+    margin:0px 150px 60px 20px;
+    line-height: 25px;
+
+}
+.footerCol2{
+    display: flex;
+    flex-direction: column;
+    margin:0 150px 80px 20px;
+    line-height: 25px;
+}
+.footerCol3{
+    display: flex;
+    position: absolute;
+    right:0;
+    margin-right:50px;
+
+}
+.footerCol3>*{
+    margin: 5px;
+
+}
+.footerCol3>p{
+    position: relative;
+    right: 13px;
+    top: 6px;
+
+}
+.footerCol3 img{
+    height: 25px;
+    width: 25px;
+   
+}
+
+.footerNotes{
+    padding-left: 20px;
+    font-size: 13px;
+    color:white;
+    line-height: 18px;
+}
+#ciscoCorporateSocialResponsibility:hover{
+    color:#0070d2
+
+}
+.footerLinks{
+    display: flex;
+    padding-bottom: 30px;
+}
+.footerLinks>div{
+    margin-right:40px;
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
